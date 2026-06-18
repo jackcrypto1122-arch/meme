@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ArrowUpRight, Check, ChevronDown, Coins, Instagram, Send, Sparkles, Zap } from "lucide-react"
+import { ArrowUpRight, BadgeCheck, Check, ChevronDown, Coins, Instagram, Send, Sparkles, Zap } from "lucide-react"
 
 import {
   artwork,
@@ -66,7 +66,45 @@ export default function Home() {
             <div className="sticker-ring left-[10%] top-[38%] hidden lg:block" />
             <div className="sticker-ring right-[12%] top-[35%] hidden lg:block" />
 
-            <div className="relative z-10 mt-6 grid gap-4 md:mt-10 md:grid-cols-4">
+            <div className="relative z-10 mx-auto max-w-5xl text-center">
+              <div className="mx-auto inline-flex items-center gap-2 rounded-full border-2 border-black bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] shadow-[4px_4px_0_#000]">
+                <BadgeCheck className="h-4 w-4" />
+                {siteConfig.heroAltHeadline}
+              </div>
+
+              <h1 className="font-display mt-6 text-[clamp(3rem,8vw,6.5rem)] uppercase leading-[0.88]">
+                {siteConfig.heroHeadline}
+              </h1>
+              <p className="mx-auto mt-4 max-w-4xl text-base font-semibold leading-7 md:text-xl">
+                {siteConfig.heroSubheadline}
+              </p>
+              <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 md:text-base">{siteConfig.heroAltSubheadline}</p>
+
+              <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                <a href="#tokenomics" className="button-primary">
+                  {siteConfig.primaryCta}
+                </a>
+                <a href="#community" className="button-secondary">
+                  {siteConfig.secondaryCta}
+                </a>
+              </div>
+            </div>
+
+            <div className="relative z-10 mt-10 flex justify-center md:mt-14">
+              <div className="hero-orbit hero-orbit-one" />
+              <div className="hero-orbit hero-orbit-two" />
+              <div className="hero-glow" />
+              <img
+                src={artwork.hero}
+                alt="Believe mascot in a cosmic hoodie"
+                className="hero-illustration float-slow relative z-10 w-full max-w-[26rem]"
+              />
+              <div className="hero-tag left-[14%] top-[18%] hidden lg:flex">Built on conviction</div>
+              <div className="hero-tag right-[12%] top-[32%] hidden lg:flex">Powered by memes</div>
+              <div className="hero-tag bottom-[10%] left-[12%] hidden lg:flex">Made for moon missions</div>
+            </div>
+
+            <div className="relative z-10 mt-8 grid gap-4 md:mt-12 md:grid-cols-4">
               {tokenStats.map((stat) => (
                 <div key={stat.label} className="stat-card">
                   <p className="text-[11px] uppercase tracking-[0.28em] text-black/60">{stat.label}</p>

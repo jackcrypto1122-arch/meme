@@ -45,7 +45,6 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { label: "Instagram", href: "#" },
   { label: "X", href: "#" },
   { label: "Telegram", href: "#" },
 ]
@@ -152,9 +151,9 @@ export const howToBuySteps = [
 
 export const tokenomics = [
   { label: "Total Supply", value: "1,000,000,000", detail: "Simple, clean, and built for a meme-first narrative." },
-  { label: "Tax", value: "TBA", detail: "Swap in your final tax structure before launch." },
-  { label: "Liquidity", value: "Locked", detail: "Use this block for your lock, burn, or LP details." },
-  { label: "Contract", value: "Add address", detail: "Replace this placeholder with the live contract when ready." },
+  { label: "Tax", value: "0%", detail: "" },
+  { label: "Liquidity", value: "Locked", detail: "" },
+  { label: "Contract", value: "Add address", detail: "" },
 ]
 
 export const roadmap = [
@@ -196,10 +195,6 @@ export const faqItems = [
   {
     question: "Who is Believe for?",
     answer: "For anyone chasing upside, community, and a chance to be early on the next viral movement.",
-  },
-  {
-    question: "Is this financial advice?",
-    answer: "No. This is meme coin culture. Always do your own research.",
   },
 ]
 

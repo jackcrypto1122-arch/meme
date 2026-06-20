@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ArrowUpRight, BadgeCheck, Check, ChevronDown, Coins, Instagram, Send, Sparkles, Zap } from "lucide-react"
+import { ArrowUpRight, BadgeCheck, Check, ChevronDown, Coins, Send, Sparkles, Zap } from "lucide-react"
 
 import {
   artwork,
@@ -196,7 +196,7 @@ export default function Home() {
                   <article key={item.label} className="token-card">
                     <p className="text-[11px] uppercase tracking-[0.3em] text-black/60">{item.label}</p>
                     <h3 className="font-display mt-4 text-3xl uppercase leading-none md:text-4xl">{item.value}</h3>
-                    <p className="mt-4 text-sm leading-7 md:text-base">{item.detail}</p>
+                    {item.detail ? <p className="mt-4 text-sm leading-7 md:text-base">{item.detail}</p> : null}
                   </article>
                 ))}
               </div>
@@ -296,17 +296,6 @@ export default function Home() {
 
       <footer id="community" className="section-cream px-4 pb-10 pt-12 md:px-6 md:pb-14 md:pt-16">
         <div className="meme-panel relative mx-auto max-w-7xl overflow-hidden bg-[var(--believe-cream)] px-6 py-12 text-center md:px-10 md:py-16">
-          <img
-            src={artwork.mogul}
-            alt="Believe mascot left"
-            className="absolute bottom-0 left-4 hidden w-40 lg:block xl:w-52"
-          />
-          <img
-            src={artwork.mogul}
-            alt="Believe mascot right"
-            className="absolute bottom-0 right-4 hidden w-40 scale-x-[-1] lg:block xl:w-52"
-          />
-
           <p className="font-display text-3xl uppercase tracking-[0.08em] md:text-5xl">{siteConfig.ticker}</p>
           <h2 className="font-display mx-auto mt-4 max-w-5xl text-[clamp(2.8rem,6vw,5.8rem)] uppercase leading-[0.92]">
             {siteConfig.finalHeadline}
@@ -316,24 +305,6 @@ export default function Home() {
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="#" className="button-primary">
               Buy Now
-            </a>
-            <a href="#" className="button-secondary">
-              Join Telegram
-            </a>
-            <a href="#" className="button-secondary">
-              Follow on X
-            </a>
-          </div>
-
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-            <a href="#" aria-label="Instagram" className="social-button">
-              <Instagram className="h-5 w-5" />
-            </a>
-            <a href="#" aria-label="X" className="social-button">
-              <span className="font-display text-lg uppercase">X</span>
-            </a>
-            <a href="#" aria-label="Telegram" className="social-button">
-              <Send className="h-5 w-5" />
             </a>
           </div>
 

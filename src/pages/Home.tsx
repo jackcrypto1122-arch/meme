@@ -308,10 +308,6 @@ export default function Home() {
             </a>
           </div>
 
-          <div className="mt-10 rounded-[2rem] border-[3px] border-black bg-white px-5 py-4 text-sm leading-7 shadow-[6px_6px_0_#000] md:mx-auto md:max-w-4xl">
-            Believe is a meme coin created for entertainment, culture, and community engagement. Nothing on this website
-            is financial advice. Always do your own research.
-          </div>
         </div>
       </footer>
     </div>

@@ -20,6 +20,8 @@ export default function Home() {
 
   const aboutSection = bodySections[0]
   const storySections = bodySections.slice(1)
+  const telegramLink = socialLinks.find((item) => item.label === "Telegram")?.href ?? "#"
+  const xLink = socialLinks.find((item) => item.label === "X")?.href ?? "#"
 
   return (
     <div className="min-h-screen bg-[var(--believe-yellow)] text-black">
@@ -41,10 +43,10 @@ export default function Home() {
           </a>
 
           <div className="flex items-center gap-3">
-            <a href="#" aria-label="Telegram" className="social-chip">
+            <a href={telegramLink} aria-label="Telegram" className="social-chip" target="_blank" rel="noreferrer">
               <Send className="h-4 w-4" />
             </a>
-            <a href="#" aria-label="X" className="social-chip">
+            <a href={xLink} aria-label="X" className="social-chip" target="_blank" rel="noreferrer">
               <span className="font-display text-sm uppercase">X</span>
             </a>
             <a href="#community" className="button-pill bg-white">
@@ -207,7 +209,7 @@ export default function Home() {
                 <p className="mt-4 text-sm leading-7 md:text-base">{siteConfig.punchySubheadline}</p>
                 <div className="mt-6 space-y-3">
                   {socialLinks.map((item) => (
-                    <a key={item.label} href={item.href} className="flex items-center justify-between rounded-full border-2 border-black bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] transition hover:-translate-y-0.5">
+                    <a key={item.label} href={item.href} className="flex items-center justify-between rounded-full border-2 border-black bg-white px-4 py-3 text-sm font-semibold uppercase tracking-[0.14em] transition hover:-translate-y-0.5" target="_blank" rel="noreferrer">
                       <span>{item.label}</span>
                       <ArrowUpRight className="h-4 w-4" />
                     </a>

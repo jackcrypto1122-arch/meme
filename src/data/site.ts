@@ -45,8 +45,8 @@ export const navLinks = [
 ]
 
 export const socialLinks = [
-  { label: "X", href: "#" },
-  { label: "Telegram", href: "#" },
+  { label: "X", href: "https://x.com/believememe_sol?s=11" },
+  { label: "Telegram", href: "https://t.me/believememeportal" },
 ]
 
 export const tokenStats = [
@@ -150,7 +150,7 @@ export const howToBuySteps = [
 ]
 
 export const tokenomics = [
-  { label: "Total Supply", value: "1,000,000,000", detail: "Simple, clean, and built for a meme-first narrative." },
+  { label: "Total Supply", value: "1,000,000,000", detail: "" },
   { label: "Tax", value: "0%", detail: "" },
   { label: "Liquidity", value: "Locked", detail: "" },
   { label: "Contract", value: "Add address", detail: "" },

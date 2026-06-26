@@ -1,7 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <rect width="128" height="128" rx="24" fill="#090909" />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="believe-favicon-fill" x1="10" y1="10" x2="54" y2="54" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff200" />
+      <stop offset="1" stop-color="#ffae00" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#fff200" />
+  <circle cx="32" cy="32" r="21" fill="#0a0a0a" />
   <path
-    d="M36 28H74C91 28 101 37 101 52C101 63 94 70 84 73V74C96 76 104 84 104 96C104 113 92 120 72 120H36V28ZM58 47V65H71C78 65 82 62 82 56C82 50 78 47 70 47H58ZM58 82V101H73C81 101 85 97 85 91C85 85 81 82 72 82H58Z"
-    fill="#f5dd1b"
+    d="M24 16H39C45 16 49 20 49 25C49 29 47 32 43 34C47 35 50 39 50 44C50 50 45 54 38 54H16L25 36H17L24 16Z"
+    fill="url(#believe-favicon-fill)"
   />
+  <path d="M30 18L20 38H28L19 52L38 31H31L40 18H30Z" fill="#0a0a0a" />
 </svg>

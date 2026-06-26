@@ -17,7 +17,7 @@ import {
 
 function BelieveLogoMark() {
   return (
-    <svg viewBox="0 0 64 64" aria-hidden="true" className="h-7 w-7">
+    <svg viewBox="0 0 64 64" aria-hidden="true" className="h-8 w-8">
       <defs>
         <linearGradient id="believe-logo-fill" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
           <stop stopColor="#fff200" />
@@ -56,7 +56,7 @@ export default function Home() {
           </nav>
 
           <a href="#home" className="mx-auto flex items-center gap-3 lg:mx-0">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-black bg-black shadow-[3px_3px_0_#000]">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-black bg-black shadow-[3px_3px_0_#000]">
               <BelieveLogoMark />
             </span>
             <span className="font-display text-2xl uppercase tracking-[0.08em]">{siteConfig.ticker}</span>

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ArrowUpRight, BadgeCheck, Check, ChevronDown, Coins, Send, Sparkles, Zap } from "lucide-react"
+import { ArrowUpRight, BadgeCheck, Check, ChevronDown, Send, Sparkles, Zap } from "lucide-react"
 
 import {
   artwork,
@@ -14,6 +14,26 @@ import {
   tokenStats,
   tokenomics,
 } from "@/data/site"
+
+function BelieveLogoMark() {
+  return (
+    <svg viewBox="0 0 64 64" aria-hidden="true" className="h-7 w-7">
+      <defs>
+        <linearGradient id="believe-logo-fill" x1="8" y1="8" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#fff200" />
+          <stop offset="1" stopColor="#ffae00" />
+        </linearGradient>
+      </defs>
+      <circle cx="32" cy="32" r="27" fill="none" stroke="url(#believe-logo-fill)" strokeWidth="4" />
+      <path
+        d="M24 15H39C45 15 49 19 49 24C49 28 47 31 43 33C47 34 50 38 50 43C50 49 45 53 38 53H16L25 35H17L24 15Z"
+        fill="url(#believe-logo-fill)"
+      />
+      <path d="M29 16L18 40H27L16 58L36 34H28L38 16H29Z" fill="#0a0a0a" opacity="0.22" />
+      <path d="M30 17L20 38H28L19 53L38 31H31L40 17H30Z" fill="url(#believe-logo-fill)" />
+    </svg>
+  )
+}
 
 export default function Home() {
   const [openQuestion, setOpenQuestion] = useState(faqItems[0]?.question ?? "")
@@ -36,8 +56,8 @@ export default function Home() {
           </nav>
 
           <a href="#home" className="mx-auto flex items-center gap-3 lg:mx-0">
-            <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-black bg-[var(--believe-yellow)]">
-              <Coins className="h-5 w-5" />
+            <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-black bg-black shadow-[3px_3px_0_#000]">
+              <BelieveLogoMark />
             </span>
             <span className="font-display text-2xl uppercase tracking-[0.08em]">{siteConfig.ticker}</span>
           </a>
